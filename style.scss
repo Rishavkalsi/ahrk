@@ -91,6 +91,27 @@ body {
         }
     }
 }
+.banner{
+    position: relative;
+    &::after,&::before{
+        content: "";
+        position: absolute;
+        background-image: url(images/ribbon.png);
+        width: 150px;
+        height: 135px;
+        opacity: 0.65;
+        background-size: cover;
+    }
+    &::after{
+        top: 0;
+        left: 0;
+    }
+    &::before{
+        right: 0;
+        bottom: 0;
+        transform: rotate(180deg);
+    }
+}
 .thank_you {
     .content {
         h6 {

@@ -100,6 +100,32 @@ body {
           flex-direction: row-reverse;
 }
 
+.banner {
+  position: relative;
+}
+
+.banner::after, .banner::before {
+  content: "";
+  position: absolute;
+  background-image: url(images/ribbon.png);
+  width: 150px;
+  height: 135px;
+  opacity: 0.65;
+  background-size: cover;
+}
+
+.banner::after {
+  top: 0;
+  left: 0;
+}
+
+.banner::before {
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .thank_you .content h6 {
   font-size: 22px;
   font-weight: 600;
