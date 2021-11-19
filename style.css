@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grey {
+  background-color: #f2f2f2;
+}
+
+.list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.list li {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.list ul li {
+  font-size: 16px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: calc(20px + 2vw);
+}
+
+.heading h3 {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.heading h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 150px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#80c0a040), color-stop(#008242), to(#80c0a040));
+  background-image: linear-gradient(90deg, #80c0a040, #008242, #80c0a040);
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.heading h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  background-image: url(images/ahrk_favicon.webp);
+  height: 22px;
+  width: 22px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.heading p {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 15px;
+  color: #008242;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.iframe iframe {
+  max-width: 100%;
+}
+
+.section {
+  padding: calc(30px + 2vw);
+}
+
+.body_wraper .section:nth-of-type(even) .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.thank_you .content h6 {
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.thank_you .content p {
+  margin-top: 20px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.thank_you .content h5 {
+  font-size: 18px;
+  text-align: right;
+  color: #008242;
+}
+
+.thank_you .content button {
+  margin-top: 10px;
+}
+
+.thank_you .content .list {
+  margin-top: 20px;
+}
+
+.clients .wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients .wraper .box {
+  text-align: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.clients .wraper .box img {
+  max-width: 60%;
+}
+/*# sourceMappingURL=style.css.map */
