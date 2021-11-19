@@ -76,6 +76,10 @@ body {
   color: #008242;
 }
 
+.image {
+  text-align: center;
+}
+
 .image img {
   border-radius: 4px;
   -webkit-box-shadow: 2px 6px 15px -5px rgba(0, 0, 0, 0.5);
@@ -90,7 +94,7 @@ body {
 }
 
 .section {
-  padding: calc(30px + 2vw);
+  padding: calc(30px + 2vw) 0;
 }
 
 .body_wraper .section:nth-of-type(even) .row {
@@ -144,7 +148,7 @@ body {
   color: #008242;
 }
 
-.thank_you .content button {
+.thank_you .content .btn1 {
   margin-top: 10px;
   color: #008242;
   background-color: #fff;
@@ -152,10 +156,22 @@ body {
   font-weight: 500;
 }
 
-.thank_you .content button:hover {
+.thank_you .content .btn1:hover {
   background-color: #008242;
   color: #fff;
   border-color: #fff;
+}
+
+.thank_you .content .btn2 {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #008242;
+  border: 1px dashed #008242;
+  font-weight: 500;
+}
+
+.thank_you .content .btn2:hover {
+  background-color: transparent;
 }
 
 .thank_you .content .list {
@@ -179,5 +195,14 @@ body {
 
 .clients .wraper .box img {
   max-width: 60%;
+}
+
+@media screen and (max-width: 991px) {
+  .thank_you .content {
+    margin-top: 20px;
+  }
+  .banner::after, .banner::before {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
