@@ -166,12 +166,13 @@ body {
   margin-top: 20px;
   color: #fff;
   background-color: #008242;
-  border: 1px dashed #008242;
+  border: 1px solid #008242;
   font-weight: 500;
 }
 
 .thank_you .content .btn2:hover {
   background-color: transparent;
+  color: #008242;
 }
 
 .thank_you .content .list {
